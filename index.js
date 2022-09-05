@@ -24,4 +24,4 @@ app.use('/category', categoryRoute);
 app.use('/order', orderRoute);
 
 
-app.listen(PORT, () => console.log(`Server runnning on port: http://localhost: ${PORT}`));
+app.listen(process.env.PORT ||PORT, () => console.log(`Server runnning on port: http://localhost: ${PORT}`));
